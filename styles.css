@@ -1,22 +1,18 @@
-/* Dark background with neon highlights */
 body {
-    background-color: #080808;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
 }
-
 
 a {
     text-decoration: none;
-    color: #00ffea;
-    text-shadow: 0 0 5px #00ffea;
+    color: #007BFF;
 }
 
 a:hover {
-    text-shadow: 0 0 10px #00ffea;
+    color: #0056b3;
 }
 
 ul {
@@ -69,11 +65,9 @@ header ul li a:hover {
     border-radius: 5px;
 }
 
-/* Typing text effect */
 header .hero h1 {
-    font-size: 2.5rem;
-    color: #00ffea;
-    /* Additional styles */
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 header .hero p {
@@ -86,15 +80,15 @@ header .hero .btn {
     margin: 10px;
     padding: 10px 20px;
     background: white;
-    color: #00ffea;
+    color: #007BFF;
     border-radius: 5px;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow: 0 0 5px #00ffea;
 }
 
 header .hero .btn:hover {
-    text-shadow: 0 0 10px #00ffea;
+    background: #0056b3;
+    color: white;
 }
 
 /* Section Styles */
@@ -134,29 +128,6 @@ section h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Circular Progress Bars */
-.skills-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.skill .circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: conic-gradient(#00ffea var(--percentage), #222 var(--percentage));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.skill .circle::after {
-    content: attr(data-percentage) '%';
-    position: absolute;
-    font-size: 1.2rem;
-}
-
 /* Experience Section */
 #experience ul {
     padding-left: 20px;
@@ -178,33 +149,6 @@ section h2 {
 
 #projects div h3 {
     color: #007BFF;
-}
-
-/* 3D Card Flip */
-.project-card {
-    perspective: 1000px;
-}
-
-.card-inner {
-    position: relative;
-    width: 200px;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-}
-
-.project-card:hover .card-inner {
-    transform: rotateY(180deg);
-}
-
-.card-front, .card-back {
-    backface-visibility: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.card-back {
-    transform: rotateY(180deg);
 }
 
 /* Contact Section */
