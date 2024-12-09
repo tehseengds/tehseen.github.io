@@ -10,13 +10,13 @@
     <meta name="author" content="Tehseen Mukhtiar">
     <meta property="og:url" content="https://www.tehseen.me">
     <meta property="og:image" content="https://tehseen.me/tehseen.jpeg">
-    <title>Tehseen Mukhtiar | Flutter Developer | Mobile Application Developer</title>
+    <title>Tehseen Mukhtiar | Mobile App Developer</title>
     <link rel="icon" href="https://tehseen.me/tehseen.jpeg" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Header Section -->
+    <!-- Header Section with Typing Animation -->
     <header>
         <nav>
             <div class="logo">Tehseen Mukhtiar</div>
@@ -29,11 +29,14 @@
             </ul>
         </nav>
         <div class="hero">
+            <h1 id="typing-text"></h1>
+        </div>
+        <!-- <div class="hero">
             <h1>Tehseen Mukhtiar</h1>
             <p>Flutter Developer & Software Engineer</p>
             <a href="Tehseen_Resume.pdf" class="btn">View My Resume</a>
             <a href="#contact" class="btn">Contact Me</a>
-        </div>
+        </div> -->
     </header>
 
     <!-- About Section -->
@@ -46,24 +49,26 @@
         </p>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section with Circular Progress Bars -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-list">
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>Mobile Development: Flutter, Dart</li>
-                <li>State Management: BLOC, GetX</li>
-                <li>Backend: Firebase, RESTful & GraphQL APIs</li>
-                <li>Others: Python, Flask, MongoDB, Selenium, HTML, CSS, JavaScript</li>
-            </ul>
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Problem-Solving</li>
-                <li>Communication</li>
-                <li>Adaptability</li>
-                <li>Mentorship</li>
-            </ul>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="circle" data-percentage="90"></div>
+                <p>Flutter</p>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percentage="80"></div>
+                <p>Dart</p>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percentage="70"></div>
+                <p>Firebase</p>
+            </div>
+            <div class="skill">
+                <div class="circle" data-percentage="60"></div>
+                <p>Python</p>
+            </div>
         </div>
     </section>
 
@@ -90,28 +95,50 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section with 3D Card Flip -->
     <section id="projects">
         <h2>Projects</h2>
-        <div>
-            <h3>AI-Enhanced Flutter App</h3>
-            <p>Integrated ChatGPT and Gemini APIs, added multilingual support, and optimized performance.</p>
+        <div class="project-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>AI-Enhanced Flutter App</h3>
+                </div>
+                <div class="card-back">
+                    <p>Integrated ChatGPT and Gemini APIs, added multilingual support, and optimized performance.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Navigation System</h3>
-            <p>Configured Google Maps and Mapbox for advanced navigation and geolocation features.</p>
+        <div class="project-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Navigation System</h3>
+                </div>
+                <div class="card-back">
+                    <p>Configured Google Maps and Mapbox for advanced navigation and geolocation features.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Automation Scripts</h3>
-            <p>Developed Python automation scripts using Selenium and Beautiful Soup for web scraping.</p>
+        <div class="project-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Automation Scripts</h3>
+                </div>
+                <div class="card-back">
+                    <p>Developed Python automation scripts using Selenium and Beautiful Soup for web scraping.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with Interactive Map and Icons -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:raj.tahseen@gmail.com">raj.tahseen@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/tehseen-mukhtiar/" target="_blank">Tehseen Mukhtiar</a></p>
+        <div id="map"></div>
+        <div class="social-icons">
+            <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+            <a href="mailto:raj.tahseen@gmail.com"><img src="email-icon.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/tehseen-mukhtiar/" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+        </div>
         <p>Location: Karachi, Sindh, Pakistan</p>
         <form>
             <label for="name">Name:</label>
@@ -128,6 +155,8 @@
     <footer>
         <p>&copy; 2024 Tehseen Mukhtiar. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
