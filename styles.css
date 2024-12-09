@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0 0 20px;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to bottom right, #007BFF, #00C6FF);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    gap: 15px;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+header ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+header .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header .hero .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: white;
+    color: #007BFF;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .hero .btn:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+#about p {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-list li {
+    background: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience Section */
+#experience ul {
+    padding-left: 20px;
+}
+
+#experience h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects div {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#projects div h3 {
+    color: #007BFF;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input, #contact textarea, #contact button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact textarea {
+    height: 100px;
+}
+
+#contact button {
+    background: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #f1f1f1;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 20px;
+}
